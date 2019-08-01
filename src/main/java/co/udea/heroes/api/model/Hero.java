@@ -6,8 +6,15 @@ import javax.persistence.*;
 @Table(name = "heroes")
 public class Hero {
 
+    @Id
+    @Column(name = "id")
     private String id;
+    @Column(name = "name")
     private String name;
+
+    public Hero(){
+
+    }
 
     public Hero(String id, String name) {
         this.id = id;
