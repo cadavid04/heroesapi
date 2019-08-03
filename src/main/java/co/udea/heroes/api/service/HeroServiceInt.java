@@ -7,5 +7,10 @@ public interface HeroServiceInt {
 
     public List<Hero> getHeroes();
     public Hero getHero(String id);
+    public Hero getHeroNo404(String id);
     public Hero getHeroByName(String name);
+    public Hero addHero(Hero hero);
+    public Hero updateHero(Hero hero);
+    public void deleteHero(String id);
+    public List<Hero> searchHeroes(String name);
 }

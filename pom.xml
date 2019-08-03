@@ -59,6 +59,13 @@
       <version>2.7.0</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-webmvc -->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-rest-webmvc</artifactId>
+      <version>3.1.9.RELEASE</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -70,6 +77,8 @@
       <artifactId>spring-boot-autoconfigure</artifactId>
       <version>2.1.6.RELEASE</version>
     </dependency>
+
+
   </dependencies>
 
   <build>
