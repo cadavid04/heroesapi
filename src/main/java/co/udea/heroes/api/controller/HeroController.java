@@ -43,7 +43,7 @@ public class HeroController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Hero> getHero(@PathVariable("id") String id) {
+    public ResponseEntity<Hero> getHero(@PathVariable("id") int id) {
         return ResponseEntity.ok(heroService.getHero(id));
     }
 
@@ -59,7 +59,7 @@ public class HeroController {
 
 
     @GetMapping("consultar404/{id}")
-    public ResponseEntity<Hero> getHeroNo404(@PathVariable("id") String id) {
+    public ResponseEntity<Hero> getHeroNo404(@PathVariable("id") int id) {
         return ResponseEntity.ok(heroService.getHeroNo404(id));
     }
 
@@ -69,7 +69,7 @@ public class HeroController {
     }
 
     @DeleteMapping("borrar/{id}")
-    public void deleteHero(@PathVariable("id") String id) {
+    public void deleteHero(@PathVariable("id") int id) {
         heroService.deleteHero(id);
     }
 }

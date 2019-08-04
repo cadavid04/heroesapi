@@ -9,7 +9,7 @@ public class Hero {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     @Column(name = "name")
     private String name;
 
@@ -17,16 +17,16 @@ public class Hero {
 
     }
 
-    public Hero(Long id, String name) {
+    public Hero(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
