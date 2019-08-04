@@ -8,7 +8,8 @@ public class Hero {
 
     @Id
     @Column(name = "id")
-    private String id;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
     @Column(name = "name")
     private String name;
 
@@ -16,16 +17,16 @@ public class Hero {
 
     }
 
-    public Hero(String id, String name) {
+    public Hero(Long id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
